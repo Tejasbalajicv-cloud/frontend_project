@@ -1,0 +1,101 @@
+/* =========================================
+   EXPLORE KARNATAKA - ONE STYLE FILE
+   Every page uses this same file.
+   ========================================= */
+
+/* 1. Colours we reuse (change them here only) */
+:root {
+  --ivory: #fbf6ec;      /* page background */
+  --ink: #2b2118;        /* main text */
+  --muted: #6b5d4f;      /* soft grey-brown text */
+  --peacock: #0f5c6e;    /* main blue-green colour */
+  --marigold: #e8a317;   /* bright orange-yellow */
+  --sand: #efe3cc;       /* light beige for boxes */
+  --white: #ffffff;
+}
+
+/* 2. Basic page settings */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.2; }
+h2 { color: var(--peacock); margin-top: 48px; }
+a { color: var(--peacock); }
+img { max-width: 100%; display: block; }
+
+/* 3. Keeps content in the middle of the screen */
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+main { padding-bottom: 60px; }
+
+/* 4. Top bar and menu */
+.topbar { background: var(--peacock); position: sticky; top: 0; z-index: 10; }
+.topbar-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; gap: 10px; }
+.logo { color: var(--white); font-family: "Fraunces", serif; font-size: 22px; text-decoration: none; }
+.menu a { color: var(--white); text-decoration: none; margin-left: 14px; font-size: 15px; }
+.menu a:hover, .menu a.active { color: var(--marigold); }
+
+/* 5. Title strip at the top of each inner page */
+.page-title { background: var(--sand); padding: 40px 0; }
+.page-title h1 { margin: 0; font-size: 40px; color: var(--peacock); }
+.page-title p { margin: 8px 0 0; color: var(--muted); }
+
+/* 6. Home page big picture */
+.hero { position: relative; margin-top: 24px; border-radius: 12px; overflow: hidden; }
+.hero img { width: 100%; height: 480px; object-fit: cover; }
+.hero-text { position: absolute; left: 0; bottom: 0; right: 0; padding: 32px; color: var(--white); background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)); }
+.hero-text h1 { font-size: 52px; margin: 0 0 8px; }
+.kicker { color: var(--marigold); text-transform: uppercase; letter-spacing: 2px; margin: 0; }
+.btn { display: inline-block; background: var(--marigold); color: var(--ink); padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+
+/* 7. Quick facts boxes */
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 24px; }
+.fact { background: var(--white); border-left: 4px solid var(--marigold); padding: 12px 14px; border-radius: 6px; }
+.fact small { display: block; color: var(--muted); }
+
+/* 8. Cards in a grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 22px; margin-top: 24px; }
+.card { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); color: var(--ink); text-decoration: none; }
+.card img, .no-photo { width: 100%; height: 190px; object-fit: cover; }
+.no-photo { background: var(--sand); color: var(--muted); font-family: "Fraunces", serif; font-size: 72px; display: flex; align-items: center; justify-content: center; }
+.card-text { padding: 16px; }
+.card h3 { margin: 0 0 8px; }
+.tags span { display: inline-block; background: var(--sand); padding: 2px 10px; border-radius: 20px; font-size: 13px; margin: 0 4px 4px 0; }
+.chapter { padding: 20px; }
+.chapter:hover { outline: 2px solid var(--marigold); }
+.num { color: var(--marigold); font-weight: 600; }
+
+/* 9. Gallery */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; margin-top: 30px; }
+.gallery a { text-decoration: none; color: var(--ink); }
+.gallery img { height: 200px; width: 100%; object-fit: cover; border-radius: 8px; }
+.gallery span { display: block; padding: 6px 2px; }
+
+/* Big picture view: hidden until its link is clicked */
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.9); z-index: 20; padding: 40px; text-align: center; color: var(--white); }
+.lightbox:target { display: block; }
+.lightbox img { max-height: 78vh; margin: 0 auto; }
+.close { color: var(--marigold); float: right; font-size: 18px; }
+
+/* 10. Tables and lists on the travel page */
+table { width: 100%; border-collapse: collapse; background: var(--white); }
+th, td { border: 1px solid var(--sand); padding: 10px; text-align: left; vertical-align: top; }
+th { background: var(--sand); }
+li { margin-bottom: 6px; }
+
+/* 11. Footer */
+.footer { background: var(--ink); color: var(--sand); padding: 24px 0; }
+.footer p { margin: 4px 0; }
+.small { font-size: 13px; color: var(--muted); }
+
+/* 12. Small screens (phones) */
+@media (max-width: 700px) {
+  .hero img { height: 340px; }
+  .hero-text h1 { font-size: 34px; }
+  .menu a { margin: 0 10px 0 0; }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery | Explore Karnataka</title>
+  <meta name="description" content="Click any picture to see it bigger.">
+  <!-- Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+  <!-- All the design lives in this one file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== TOP BAR WITH MENU ===== -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a href="index.html" class="logo">Explore Karnataka</a>
+      <nav class="menu">
+      <a href="introduction.html">Introduction</a>
+      <a href="tourist-places.html">Tourist Places</a>
+      <a href="historical-places.html">Historical Places</a>
+      <a href="waterfalls-hill-stations.html">Waterfalls & Hills</a>
+      <a href="famous-foods.html">Famous Foods</a>
+      <a href="gallery.html" class="active">Image Gallery</a>
+      <a href="travel-information.html">Travel Information</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-title">
+    <div class="wrap">
+      <h1>Image Gallery</h1>
+      <p>Click any picture to see it bigger.</p>
+    </div>
+  </section>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="wrap">
+    <div class="gallery">
+      <a href="#photo1"><img src="images/hero-hampi.jpg" alt="Hampi boulder landscape" loading="lazy"><span>Hampi boulder landscape</span></a>
+      <a href="#photo2"><img src="images/mysore-palace.jpg" alt="Mysore Palace at dusk" loading="lazy"><span>Mysore Palace at dusk</span></a>
+      <a href="#photo3"><img src="images/jog-falls.jpg" alt="Jog Falls in monsoon" loading="lazy"><span>Jog Falls in monsoon</span></a>
+      <a href="#photo4"><img src="images/coorg-plantation.jpg" alt="Coffee hills of Coorg" loading="lazy"><span>Coffee hills of Coorg</span></a>
+      <a href="#photo5"><img src="images/gokarna-beach.jpg" alt="Gokarna coastline" loading="lazy"><span>Gokarna coastline</span></a>
+      <a href="#photo6"><img src="images/hampi-temple.jpg" alt="Virupaksha Temple gopuram" loading="lazy"><span>Virupaksha Temple gopuram</span></a>
+      <a href="#photo7"><img src="images/gol-gumbaz.jpg" alt="Gol Gumbaz dome" loading="lazy"><span>Gol Gumbaz dome</span></a>
+      <a href="#photo8"><img src="images/karnataka-food.jpg" alt="Meal on a banana leaf" loading="lazy"><span>Meal on a banana leaf</span></a>
+    </div>
+
+    <!-- Big views. Each one shows only when its #photoN is in the address bar -->
+    <div class="lightbox" id="photo1">
+      <a href="#" class="close">Close</a>
+      <img src="images/hero-hampi.jpg" alt="Hampi boulder landscape">
+      <p><strong>Hampi boulder landscape</strong> - Granite hills around the ruins of Vijayanagara, Ballari district</p>
+    </div>
+    <div class="lightbox" id="photo2">
+      <a href="#" class="close">Close</a>
+      <img src="images/mysore-palace.jpg" alt="Mysore Palace at dusk">
+      <p><strong>Mysore Palace at dusk</strong> - The Amba Vilas Palace lit up in Mysuru</p>
+    </div>
+    <div class="lightbox" id="photo3">
+      <a href="#" class="close">Close</a>
+      <img src="images/jog-falls.jpg" alt="Jog Falls in monsoon">
+      <p><strong>Jog Falls in monsoon</strong> - The Sharavathi River falling 253 m in Shivamogga district</p>
+    </div>
+    <div class="lightbox" id="photo4">
+      <a href="#" class="close">Close</a>
+      <img src="images/coorg-plantation.jpg" alt="Coffee hills of Coorg">
+      <p><strong>Coffee hills of Coorg</strong> - Shade-grown coffee in Kodagu district</p>
+    </div>
+    <div class="lightbox" id="photo5">
+      <a href="#" class="close">Close</a>
+      <img src="images/gokarna-beach.jpg" alt="Gokarna coastline">
+      <p><strong>Gokarna coastline</strong> - Beaches between rocky headlands in Uttara Kannada</p>
+    </div>
+    <div class="lightbox" id="photo6">
+      <a href="#" class="close">Close</a>
+      <img src="images/hampi-temple.jpg" alt="Virupaksha Temple gopuram">
+      <p><strong>Virupaksha Temple gopuram</strong> - Temple tower at Hampi, still in daily worship</p>
+    </div>
+    <div class="lightbox" id="photo7">
+      <a href="#" class="close">Close</a>
+      <img src="images/gol-gumbaz.jpg" alt="Gol Gumbaz dome">
+      <p><strong>Gol Gumbaz dome</strong> - Adil Shahi mausoleum in Vijayapura</p>
+    </div>
+    <div class="lightbox" id="photo8">
+      <a href="#" class="close">Close</a>
+      <img src="images/karnataka-food.jpg" alt="Meal on a banana leaf">
+      <p><strong>Meal on a banana leaf</strong> - Dosa, idli, sambar, chutney and filter coffee</p>
+    </div>
+  </main>
+
+  <!-- ===== BOTTOM BAR ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>Explore Karnataka - a simple student website made with HTML and CSS.</p>
+      <p class="small">Pictures are AI-generated illustrations.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
